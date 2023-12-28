@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(192, 147, 234);
+}
+header{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+option{
+    font-weight: bold;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+
+    <link rel="stylesheet" href="002--Waiter_Order_App.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="card bg-info">
+            <div class="card-body">
+                <header>
+                    <h1> Good Food App </h1>
+                </header><br>
+                <div>
+                    <section>
+                        <form action="#" id="forming" onsubmit="storingOrderToLocalStorage(event)">
+                            <div>
+                                <label for="chP"> Choose Price :- </label>
+                                <input type="number" name="chosePrc" id="chP" class="form-control">
+                            </div>
+
+                            <div>
+                                <label for="chD"> Choose Dish :- </label>
+                                <input type="text" name="choseDis" id="chD" class="form-control">
+                            </div>
+
+                            <div>
+                                <label for="chT"> Choose a Table :- </label>
+                                <select name="opt" id="sel" class="form-control">
+                                    <option > Table = 01 </option>
+                                    <option > Table = 02 </option>
+                                    <option > Table = 03 </option>
+                                    <option > Table = 04 </option>
+                                    <option selected> None </option>
+                                </select>
+                            </div><br>
+
+                            <div>
+                                <button class="btn btn-danger form-control"> Order Book </button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 id="ord"> Orders :- </h1>
+                
+                <h2 id="table10"> Table :- 01 </h2>
+                <div>
+                    <ul id="tbl01"></ul>
+                </div>
+                
+                <h2 id="table20"> Table :- 02 </h2>
+                <div>
+                    <ul id="tbl02"></ul>
+                </div>
+                
+                <h2 id="table30"> Table :- 03 </h2>
+                <div>
+                    <ul id="tbl03"></ul>
+                </div>
+                
+                <h2 id="table40"> Table :- 04 </h2>
+                <div>
+                    <ul id="tbl04"></ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="002--Waiter_Order_App.js"></script>
+</body>
+</html>
